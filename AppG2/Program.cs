@@ -16,7 +16,7 @@ namespace AppG2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmThongTinSinhVien());
+            Application.Run(new frmStudent());
         }
     }
 }

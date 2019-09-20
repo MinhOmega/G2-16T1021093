@@ -89,5 +89,10 @@ namespace AppG2
             picAnhDaiDien.Image = Properties.Resources.avatar;
             File.Delete(pathAvatarImg);
         }
+
+        private void PicAnhDaiDien_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

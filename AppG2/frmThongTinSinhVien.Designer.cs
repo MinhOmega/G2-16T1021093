@@ -214,7 +214,7 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(80, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(89, 17);
             this.toolStripStatusLabel1.Text = "Tổng số mục: 0";
             // 
             // toolStrip1
@@ -233,7 +233,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(91, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(100, 22);
             this.toolStripLabel1.Text = "Quá trình học tập";
             // 
             // toolStripButton3
@@ -242,7 +242,7 @@
             this.toolStripButton3.Image = global::AppG2.Properties.Resources.delete;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(45, 22);
+            this.toolStripButton3.Size = new System.Drawing.Size(47, 22);
             this.toolStripButton3.Text = "Xóa";
             // 
             // toolStripButton2
@@ -260,7 +260,7 @@
             this.toolStripButton1.Image = global::AppG2.Properties.Resources.add;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(53, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(58, 22);
             this.toolStripButton1.Text = "Thêm";
             // 
             // lnkChonAnhDaiDien
@@ -312,6 +312,7 @@
             this.picAnhDaiDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAnhDaiDien.TabIndex = 0;
             this.picAnhDaiDien.TabStop = false;
+            this.picAnhDaiDien.Click += new System.EventHandler(this.PicAnhDaiDien_Click);
             this.picAnhDaiDien.DragDrop += new System.Windows.Forms.DragEventHandler(this.PicAnhDaiDien_DragDrop);
             this.picAnhDaiDien.DragEnter += new System.Windows.Forms.DragEventHandler(this.PicAnhDaiDien_DragEnter);
             // 
@@ -320,13 +321,13 @@
             this.menuAvatar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mniXoaAnhDaiDien});
             this.menuAvatar.Name = "menuAvatar";
-            this.menuAvatar.Size = new System.Drawing.Size(181, 48);
+            this.menuAvatar.Size = new System.Drawing.Size(163, 26);
             // 
             // mniXoaAnhDaiDien
             // 
             this.mniXoaAnhDaiDien.Image = global::AppG2.Properties.Resources.deleete2;
             this.mniXoaAnhDaiDien.Name = "mniXoaAnhDaiDien";
-            this.mniXoaAnhDaiDien.Size = new System.Drawing.Size(180, 22);
+            this.mniXoaAnhDaiDien.Size = new System.Drawing.Size(162, 22);
             this.mniXoaAnhDaiDien.Text = "Xóa ảnh đại diện";
             this.mniXoaAnhDaiDien.Click += new System.EventHandler(this.MniXoaAnhDaiDien_Click);
             // 
