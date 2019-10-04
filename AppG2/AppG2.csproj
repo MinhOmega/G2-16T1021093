@@ -46,10 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmThongTinSinhVien.cs">
+    <Compile Include="Controllor\StudentService.cs" />
+    <Compile Include="View\frmThongTinSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmThongTinSinhVien.Designer.cs">
+    <Compile Include="View\frmThongTinSinhVien.Designer.cs">
       <DependentUpon>frmThongTinSinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTinhToanCoBan.cs">
@@ -58,6 +59,8 @@
     <Compile Include="frmTinhToanCoBan.Designer.cs">
       <DependentUpon>frmTinhToanCoBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\HistoryLearning.cs" />
+    <Compile Include="Model\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="frmStudent.cs">
@@ -66,7 +69,7 @@
     <Compile Include="frmStudent.Designer.cs">
       <DependentUpon>frmStudent.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmThongTinSinhVien.resx">
+    <EmbeddedResource Include="View\frmThongTinSinhVien.resx">
       <DependentUpon>frmThongTinSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTinhToanCoBan.resx">
