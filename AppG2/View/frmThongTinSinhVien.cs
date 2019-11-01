@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 ﻿using System;
+=======
+﻿using AppG2.Controllor;
+using System;
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+<<<<<<< HEAD
 using System.Linq;
 using System.IO;
 using System.Text;
@@ -10,11 +16,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppG2.Controller;
 using AppG2.Model;
+=======
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
 
 namespace AppG2.View
 {
     public partial class frmThongTinSinhVien : Form
     {
+<<<<<<< HEAD
         #region variables for process Image Avatar
         Image image;
         string maSinhVien;
@@ -68,10 +82,46 @@ namespace AppG2.View
                 txtTen.Text = student.FirstName;
                 txtQueQuan.Text = student.POB;
                 DTPNgaySinh.Value = student.DOB;
+=======
+        #region Variables to process Image Avatar 
+        Image image;
+        string pathDirectoryImg;
+        string pathAvatarImg;
+        #endregion
+        /// <summary>
+        /// hàm khởi tạo cho frmTTSV
+        /// </summary>
+        public frmThongTinSinhVien(string maSinhVien)
+        {
+            InitializeComponent();
+            pathDirectoryImg = Application.StartupPath + "\\Img";
+            pathAvatarImg = pathDirectoryImg + "\\avatar.png";
+            picAnhDaiDien.AllowDrop = true;
+            if (File.Exists(pathAvatarImg))
+            {
+                FileStream fileStream = new FileStream(pathAvatarImg, FileMode.Open, FileAccess.Read);
+                picAnhDaiDien.Image = Image.FromStream(fileStream);
+                fileStream.Close();
+            }
+            bdsQuaTrinhHocTap.DataSource = null; // khởi tạo giá trị null nếu ban đầu chưa có gì
+            dtgQuaTrinhHocTap.AutoGenerateColumns = false; //tắt chế độ tự tạo cột, 
+            var student = StudentService.GetStudent(maSinhVien);
+            //hàm kiểm tra sinh viên
+            if (student == null)
+                throw new Exception("Không tồn tại sinh viên này");
+            else
+            {
+                txtMaSinhVien.Text = student.IDStudent;
+                txtHo.Text = student.LastName;
+                txtTen.Text = student.FirstName;
+                txtQueQuan.Text = student.POB;
+                dtpNgaySinh.Value = student.DOB;
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
                 chkGioiTinh.Checked = student.Gender == Model.GENDER.Male;
                 if (student.ListHistoryLearning != null)
                 {
                     bdsQuaTrinhHocTap.DataSource = student.ListHistoryLearning;
+<<<<<<< HEAD
                     
                     // lưu trữ lên bộ nhớ RAM
                     // để hiển thị mượt hơn
@@ -123,17 +173,40 @@ namespace AppG2.View
                 image = Image.FromFile(openFileDialog.FileName);
                 lnkChonAnhDaiDien.Image = image;
                 // từ đường dẫn openfIledialog.filename tạo ra 1 cái Image rồi gán lnkChonAnh vào image
+=======
+                }
+                dtgQuaTrinhHocTap.DataSource = bdsQuaTrinhHocTap;
+            }
+        }
+
+        private void LnkChonAnhDaiDien_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Chọn ảnh đại diện";
+            openFileDialog.Filter = "File ảnh(*.png, *.jpg)|*.png;*.jpg";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                image = Image.FromFile(openFileDialog.FileName);
+                picAnhDaiDien.Image = image;
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
             }
         }
 
         private void BtnCapNhat_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             #region Cập nhật hình đại diện
             bool imageSave = false;
             if(image!=null) // lưu ảnh vào thư mục cần
             {
                 //đầu tiên phải thêm thư viện system.IO
                 //string pathDirectory = Application.StartupPath + "/Img";// trả về thư mục chứa ứng dụng
+=======
+            #region Cập nhật hình đại diện
+            bool imageSave = false;
+            if (image != null)
+            {
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
                 if (!Directory.Exists(pathDirectoryImg))
                 {
                     Directory.CreateDirectory(pathDirectoryImg);
@@ -142,6 +215,7 @@ namespace AppG2.View
                 imageSave = true;
             }
             #endregion
+<<<<<<< HEAD
             if(imageSave)
             {
                 MessageBox.Show("Đã cập nhật thông tin thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -159,10 +233,34 @@ namespace AppG2.View
         }
 
         private void LnkChonAnhDaiDien_DragEnter(object sender, DragEventArgs e)
+=======
+
+            if (imageSave)
+            {
+                MessageBox.Show(
+                    "Đã cập nhật thông tin sinh viên thành công",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                    );
+            }
+        }
+
+        private void PicAnhDaiDien_DragDrop(object sender, DragEventArgs e)
+        {
+            var rs = (string[])e.Data.GetData(DataFormats.FileDrop);
+            var filePath = rs.FirstOrDefault();
+            image = Image.FromFile(filePath);
+            picAnhDaiDien.Image = image;
+        }
+
+        private void PicAnhDaiDien_DragEnter(object sender, DragEventArgs e)
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
         {
             e.Effect = DragDropEffects.Copy;
         }
 
+<<<<<<< HEAD
         private void ContextMenuStrip1_Click(object sender, EventArgs e)
         {
 
@@ -235,6 +333,16 @@ namespace AppG2.View
                     loadDataHistory(maSinhVien);
                 }
             }
+=======
+        private void MniXoaAnhDaiDien_Click(object sender, EventArgs e)
+        {
+            picAnhDaiDien.Image = Properties.Resources.avatar;
+            File.Delete(pathAvatarImg);
+        }
+
+        private void PicAnhDaiDien_Click(object sender, EventArgs e)
+        {
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
 
         }
     }

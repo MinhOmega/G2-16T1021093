@@ -4,7 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{4C352753-B2C5-4631-AD8C-81A7F8417842}</ProjectGuid>
+=======
+    <ProjectGuid>{2D71E52D-85AA-4F00-A956-ADEF8CAF70F5}</ProjectGuid>
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
     <OutputType>WinExe</OutputType>
     <RootNamespace>AppG2</RootNamespace>
     <AssemblyName>AppG2</AssemblyName>
@@ -46,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Controller\ContactService.cs" />
     <Compile Include="Controller\StudentService.cs" />
     <Compile Include="frmContactChiTiet.cs">
@@ -67,6 +72,9 @@
     <Compile Include="View\frmQuaTrinhHocTapChiTiet.Designer.cs">
       <DependentUpon>frmQuaTrinhHocTapChiTiet.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="Controllor\StudentService.cs" />
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
     <Compile Include="View\frmThongTinSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +91,7 @@
     <Compile Include="Model\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <EmbeddedResource Include="frmContactChiTiet.resx">
       <DependentUpon>frmContactChiTiet.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +101,14 @@
     <EmbeddedResource Include="View\frmQuaTrinhHocTapChiTiet.resx">
       <DependentUpon>frmQuaTrinhHocTapChiTiet.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <Compile Include="frmStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudent.Designer.cs">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </Compile>
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
     <EmbeddedResource Include="View\frmThongTinSinhVien.resx">
       <DependentUpon>frmThongTinSinhVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +125,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="frmStudent.resx">
+      <DependentUpon>frmStudent.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -122,6 +145,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\gt1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -138,10 +162,29 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\boqua.png" />
+=======
+    <None Include="Resources\Koala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_8_2698685.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\update.png" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup />
   <ItemGroup>
     <Content Include="Data\contacts.txt">
@@ -153,6 +196,25 @@
     <Content Include="Data\student.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+=======
+  <ItemGroup>
+    <None Include="Resources\deleete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_next_925898 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_previous_925904 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_previous_925904 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_179_Upload_183298.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_tv_show_172610.png" />
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

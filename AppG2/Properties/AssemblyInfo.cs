@@ -8,9 +8,15 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("AppG2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
+<<<<<<< HEAD
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("AppG2")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
+=======
+[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyProduct("AppG2")]
+[assembly: AssemblyCopyright("Copyright © Microsoft 2019")]
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +26,11 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
+<<<<<<< HEAD
 [assembly: Guid("4c352753-b2c5-4631-ad8c-81a7f8417842")]
+=======
+[assembly: Guid("2d71e52d-85aa-4f00-a956-adef8caf70f5")]
+>>>>>>> fa6656062ad07236aecf31725e24efd42b4eb4ac
 
 // Version information for an assembly consists of the following four values:
 //
