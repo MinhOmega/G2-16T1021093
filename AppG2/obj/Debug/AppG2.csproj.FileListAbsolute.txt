@@ -1,0 +1,33 @@
+C:\Users\ADMIN\source\repos\AppG2\AppG2\bin\Debug\AppG2.exe.config
+C:\Users\ADMIN\source\repos\AppG2\AppG2\bin\Debug\AppG2.exe
+C:\Users\ADMIN\source\repos\AppG2\AppG2\bin\Debug\AppG2.pdb
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.csprojAssemblyReference.cache
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.Properties.Resources.resources
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.exe
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.pdb
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.frmTinhToanCoBan.resources
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmThongTinSinhVien.resources
+C:\Users\ADMIN\source\repos\AppG2\AppG2\bin\Debug\Data\student.txt
+C:\Users\ADMIN\source\repos\AppG2\AppG2\bin\Debug\Data\learninghistory.txt
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.View.frmQuaTrinhHocTapChiTiet.resources
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.frmContacts.resources
+C:\Users\ADMIN\source\repos\AppG2\AppG2\bin\Debug\Data\contacts.txt
+C:\Users\ADMIN\source\repos\AppG2\AppG2\obj\Debug\AppG2.frmContactChiTiet.resources
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\bin\Debug\Data\contacts.txt
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\bin\Debug\Data\learninghistory.txt
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\bin\Debug\Data\student.txt
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\bin\Debug\AppG2.exe.config
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\bin\Debug\AppG2.exe
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\bin\Debug\AppG2.pdb
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.csprojAssemblyReference.cache
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.frmContactChiTiet.resources
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.frmContacts.resources
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.View.frmQuaTrinhHocTapChiTiet.resources
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.View.frmThongTinSinhVien.resources
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.frmTinhToanCoBan.resources
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.Properties.Resources.resources
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.csproj.GenerateResource.cache
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.exe
+F:\IT\C# Git\.NETG2_TranNgocAnh\AppG2\obj\Debug\AppG2.pdb
